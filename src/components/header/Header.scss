@@ -1,0 +1,116 @@
+.header {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 0.9rem 0 2rem;
+
+  .left {
+    width: 45%;
+  }
+  .searchContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.2rem 0.7rem;
+    border: 1px solid rgba(0, 128, 128, 0.034);
+    border-radius: 5px;
+  }
+
+  .searchIcon {
+    color: rgba(128, 128, 128, 0.705);
+  }
+
+  input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0.3rem;
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 23px;
+  }
+
+  input::placeholder {
+    color: rgba(128, 128, 128, 0.705);
+    font-size: 0.75rem;
+  }
+
+  .language .world {
+    $size: 1.5rem;
+    font-size: $size;
+    color: rgba(0, 0, 0, 0.61);
+    cursor: pointer;
+  }
+
+  .world:hover {
+    color: black;
+  }
+
+  .notification {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .notification,
+  .darkMode {
+    $size: 1.5rem;
+    font-size: $size;
+    color: rgba(0, 0, 0, 0.61);
+    cursor: pointer;
+  }
+
+  .message {
+    $size: 1.3rem;
+    font-size: $size;
+  }
+
+  .notification a {
+    text-decoration: none;
+  }
+
+  .notificationValue {
+    $size: 16px;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.685);
+    border: none;
+    outline: none;
+    color: white;
+    width: $size;
+    height: $size;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+    font-size: 10px;
+    left: 13px;
+    top: -5px;
+  }
+
+  .notification:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .darkMode:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .profile img {
+    $size: 1.5rem;
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+  }
+}

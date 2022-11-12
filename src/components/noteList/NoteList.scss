@@ -1,0 +1,138 @@
+$poppins: "Poppins", sans-serif;
+$Ubuntu: "Ubuntu", sans-serif;
+$borderLine: rgba(0, 128, 128, 0.384);
+
+.emptyData {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  h3 {
+    font-family: $poppins;
+    color: rgba(0, 0, 0, 0.534);
+  }
+  p {
+    font-family: $poppins;
+    font-size: 0.9rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.904);
+  }
+}
+
+.noteList {
+  // background-color: lightcyan;
+  padding: 0.6rem 0.5rem 0.6rem 1.1rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+
+
+  .noteTitle {
+    font-family: $Ubuntu;
+    font-size: 2rem;
+  }
+
+  .noteList::-webkit-scrollbar {
+    display: none;
+  }
+
+  ul {
+    margin: 0;
+    padding: 1.3rem 0.2rem 0.3rem 0rem;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  li {
+    outline: none;
+    border: none;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    flex-direction: column;
+    padding: 0.3rem 0.6rem;
+    padding-bottom: 0.9rem;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.774);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  li:hover {
+    background-color: lightcyan;
+    color: black;
+  }
+
+  .noteText {
+    padding: 0.6rem 0.5rem;
+    font-size: 0.85rem;
+    overflow: hidden;
+  }
+
+  .utils {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .date {
+    font-size: 0.7rem;
+    text-transform: capitalize;
+  }
+
+  .editDeleteContainer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .edit_container,
+  .deleteContainer {
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 0.308), black);
+    // background:#333;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .edit_container:hover,
+  .deleteContainer:hover {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.308), black);
+    // background:black;
+    color: white;
+  }
+
+  @media screen and (max-width: 700px) {
+
+    .noteTitle {
+      margin-left: 0.3rem;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+    }
+    li {
+      width: 92%;
+      height: 200px;
+    }
+  }
+}
+
+
+
