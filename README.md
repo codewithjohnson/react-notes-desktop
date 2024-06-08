@@ -1,1 +1,1 @@
-# react-notes-desktop
+# react context, useReducer and local storage
